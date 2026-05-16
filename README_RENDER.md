@@ -14,9 +14,12 @@ Este proyecto expone una app FastAPI en `main_chatwoot.py` con el objeto `app`.
 Si prefieres crear un Web Service manualmente, usa:
 
 - Runtime: `Python`
+- Root Directory: `LangChain-AgenteIA-MultiTool-Pinecone` si el repo contiene varias carpetas de proyectos
 - Build Command: `pip install --upgrade pip && pip install -r requirements.txt`
-- Start Command: `uvicorn main_chatwoot:app --host 0.0.0.0 --port $PORT`
+- Start Command: `uvicorn app:app --host 0.0.0.0 --port $PORT`
 - Health Check Path: `/health`
+
+El archivo `app.py` exporta la misma app FastAPI desde `main_chatwoot.py`.
 
 ## Variables de entorno
 
